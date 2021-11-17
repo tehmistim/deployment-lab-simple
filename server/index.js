@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../server/index.js'));
 });
 
-app.use('/js', express.static(path.join(__dirname, 'server/index.js')));
+app.use('/js', express.static(path.join(__dirname, '../server/index.js')));
 
 
 
