@@ -21,7 +21,7 @@ body {
   /* Left and right column */
 .column.left {
     width: 25%;
-    height: 800px;
+    height: 900px;
     background-color: rgb(233, 233, 233);
     text-align: right;
 }
@@ -42,7 +42,7 @@ body {
 
 .column.right {
     width: 25%;
-    height: 800px;
+    height: 900px;
     background-color: rgb(233, 233, 233);
     text-align: left;
 }
