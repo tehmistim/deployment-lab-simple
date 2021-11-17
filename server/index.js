@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'));
 });
 
-app.get('/', (req, res) => {
+app.get('/index.css', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.css'));
 });
 
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../server/index.js'));
 });
 
-app.use('/js', express.static(path.join(__dirname, '../server/index.js')));
+app.use('/server/index.js', express.static(path.join(__dirname, '../server/index.js')));
 
 
 
