@@ -22,9 +22,8 @@ app.get('/images/header.jpg', (req, res) => {
     res.sendFile(path.join(__dirname, '../images/header.jpg'));
 });
 
-app.get('/images', (req, res) => {
-    res.sendFile(path.join(__dirname, '../images'));
-});
+const serveIndex = require('serve-index'); 
+app.use('/images', serveIndex(path.join(__dirname, '/images')));
 
 app.use('/server/index.js', express.static(path.join(__dirname, '../server/index.js')));
 
